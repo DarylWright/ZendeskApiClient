@@ -62,6 +62,11 @@ namespace ZendeskApi.Client
             return DeserializeContent<T>(response);
         }
 
+        public void Post(Uri requestUri)
+        {
+            ValidateResponse(_http.Post(BuildRequest(requestUri)));
+        }
+
         public T Post<T>(Uri requestUri, object item = null, string contentType = "application/json")
         {
             var response = _http.Post(BuildRequest(requestUri, item, contentType));

@@ -22,6 +22,7 @@ namespace ZendeskApi.Client
         public IOrganizationMembershipResource OrganizationMemberships { get; private set; }
         public IRequestResource Request { get; private set; }
         public ISatisfactionRatingResource SatisfactionRating { get; private set; }
+        public IVoiceResource Voice { get; private set; }
 
         public ZendeskClient(Uri baseUri, ZendeskDefaultConfiguration configuration, ISerializer serializer = null, IHttpChannel httpChannel = null, ILogAdapter logger = null)
             :base(baseUri, configuration, serializer, httpChannel, logger)
@@ -39,6 +40,7 @@ namespace ZendeskApi.Client
             OrganizationMemberships = new OrganizationMembershipResource(this);
             Request = new RequestResource(this);
             SatisfactionRating = new SatisfactionRatingResource(this);
+            Voice = new VoiceResource(this);
         }
     }
 }

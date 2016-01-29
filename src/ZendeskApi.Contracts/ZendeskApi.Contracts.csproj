@@ -96,6 +96,9 @@
     <Compile Include="Models\Group.cs" />
     <Compile Include="Models\OrderBy.cs" />
     <Compile Include="Models\ZendeskType.cs" />
+    <Compile Include="Requests\DisplayRequest.cs" />
+    <Compile Include="Requests\DisplayTicketRequest.cs" />
+    <Compile Include="Requests\DisplayUserRequest.cs" />
     <Compile Include="Requests\IRequest.cs" />
     <Compile Include="Requests\OrganizationRequest.cs" />
     <Compile Include="Requests\OrganizationMembershipRequest.cs" />

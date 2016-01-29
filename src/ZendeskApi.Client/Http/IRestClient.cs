@@ -12,6 +12,8 @@ namespace ZendeskApi.Client.Http
 
         Task<T> GetAsync<T>(Uri requestUri);
 
+        void Post(Uri requestUri);
+
         T Post<T>(Uri requestUri, object item = null, string contentType = "application/json");
 
         T PostFile<T>(Uri requestUri, IHttpPostedFile file);

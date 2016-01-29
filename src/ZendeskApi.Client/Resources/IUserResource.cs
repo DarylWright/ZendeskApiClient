@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using ZendeskApi.Contracts.Models;
 using ZendeskApi.Contracts.Requests;
 using ZendeskApi.Contracts.Responses;
